@@ -5,22 +5,21 @@
         3. Group repeating empty strings into one
 
     Usage:
-        filter_seq(iterable)
+        filter_seq(iterable) -> returns generator
         list(filter_seq(iterable)) if iterable is finite
         accept any iterable sequences
-        -> returns generator
 """
 
 import sys
 
 
 def is_valid(value):
-    """ Checking if string is empty """
-    return bool(value.strip())
+    """ Check if string is empty """
+    return bool(value)
 
 
 def filter_seq(iterable):
-    """ Returns generator which yields filtered and grouped values"""
+    """ Return generator which yields filtered and grouped values"""
 
     input_iterator = iter(iterable)
     current_value = next(input_iterator)

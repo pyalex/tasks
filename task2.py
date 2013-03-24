@@ -107,7 +107,7 @@ def merge_log_files(filenames):
 
 if __name__ == '__main__':
     if len(sys.argv) < 2:
-        exit('Usage python task2.py filename1 filename2 ...')
+        exit('Usage: python task2.py filename1 filename2 ...')
 
     result = merge_log_files(sys.argv[1:])
 
